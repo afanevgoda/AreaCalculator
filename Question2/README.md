@@ -24,11 +24,11 @@ CREATE TABLE ProductToCategory(
 ```
 INSERT INTO Product (name) VALUES 
     ("Alpha"),
-	("Beta"),
-	("Delta");
+    ("Beta"),
+    ("Delta");
 INSERT INTO Category (name) VALUES 
     ("CategoryA"),
-	("CategoryB");
+    ("CategoryB");
 INSERT INTO ProductToCategory (productId, categoryId) VALUES 
     (1, 1),
     (1, 2),
