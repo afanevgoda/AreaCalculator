@@ -47,4 +47,4 @@ SELECT p.name AS ProductName, c.name AS CategoryName
    RIGHT JOIN Product p ON p.id = ptc.productId;
 ```
 
-![SquareClassCreated](.\result.png)
+![SquareClassCreated](https://github.com/afanevgoda/AreaCalculator/blob/master/Question2/result.png)
