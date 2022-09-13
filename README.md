@@ -29,7 +29,7 @@
 
 1) Создайте новый класс для необходимой фигуры в директории `Shapes`.
 
-![SquareClassCreated](.\README_images\SquareClassCreated.png)
+![SquareClassCreated](https://github.com/afanevgoda/AreaCalculator/blob/master/README_images/SquareClassCreated.png)
 
 2) Реализуйте им метод `IShape`.
 
@@ -37,13 +37,13 @@
 
 * Не забудьте добавить `internal` конструктор для возможности создать в будущем такую фигуру через `ShapeCreator`, но запретить создание фигур вручную. Также не забудьте про заполнение полей в конструкторе, необходимых для расчета площади фигуры.
 
-  ![SquareClassCreated](.\README_images\SquareClassCode.png)
+  ![SquareClassCode](https://github.com/afanevgoda/AreaCalculator/blob/master/README_images/SquareClassCode.png)
 
 3) Добавьте код для создания новой фигуры в `ShapeCreator` и `IShapeCreator`, добавив необходимую валидацию
 
-![IShapeCreatorSquare](.\README_images\IShapeCreatorSquare.png)
+![IShapeCreatorSquare](https://github.com/afanevgoda/AreaCalculator/blob/master/README_images/IShapeCreatorSquare.png)
 
-![ShapeCreatorSquare](.\README_images\ShapeCreatorSquare.png)
+![ShapeCreatorSquare](https://github.com/afanevgoda/AreaCalculator/blob/master/README_images/ShapeCreatorSquare.png)
 
 Добавление новой фигуры закончено. Следуйте инструкции выше, чтобы далее использовать новую фигуру и расчитать её площадь. Если всё работает корректно, **не забудьте добавить новые тесты для созданной фигуры**.
 
