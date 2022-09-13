@@ -3,7 +3,9 @@
 namespace AreaCalculator;
 
 public interface IShapeCreator{
-    Triangle CreateTriangle(float sideA, float sideB, float sideC);
+    Triangle CreateTriangle(double sideA, double sideB, double sideC);
 
-    Circle CreateCircle(float radius);
+    Circle CreateCircle(double radius);
+    
+    Square CreateSquare(double side);
 }

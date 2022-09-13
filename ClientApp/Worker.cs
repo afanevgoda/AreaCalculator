@@ -25,7 +25,6 @@ public class Worker : BackgroundService{
     }
 
     private void CalculateAreaOfRandomShapes() {
-        var rnd = new Random();
         Enumerable.Repeat(0, 100).Select(_ => CreateCircleOrTriangle()).ToList()
             .ForEach(shape => {
                 var area = _areaCalculator.CalculateArea(shape);
@@ -40,6 +39,7 @@ public class Worker : BackgroundService{
 
     private IShape CreateCircleOrTriangle() {
         var rnd = new Random();
+        // -1 inclusive, 1 exclusive => we will get -1 or 0
         var randomValue = rnd.Next(-1, 1);
         if (randomValue == -1)
             return _shapeCreator.CreateCircle(rnd.Next(1, 10));

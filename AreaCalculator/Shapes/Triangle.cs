@@ -22,8 +22,7 @@ public class Triangle : IShape{
         _sideB = sideB;
         _sideC = sideC;
     }
-
-
+    
     public bool IsItRightTriangle() {
         var isAHypotenuse = Math.Abs(Math.Pow(_sideA, 2) - (Math.Pow(_sideB, 2) + Math.Pow(_sideC, 2))) < _tolerance;
         var isBHypotenuse = Math.Abs(Math.Pow(_sideB, 2) - (Math.Pow(_sideA, 2) + Math.Pow(_sideC, 2))) < _tolerance;

@@ -1,13 +1,13 @@
 ﻿namespace AreaCalculator.Shapes;
 
 public class Circle : IShape{
-    private float _radius;
+    private double _radius;
 
-    internal Circle(float radius) {
+    internal Circle(double radius) {
         _radius = radius;
     }
 
     public double CalculateArea() {
-        return (float)(Math.PI * Math.Pow(_radius, 2));
+        return Math.PI * Math.Pow(_radius, 2);
     }
 }

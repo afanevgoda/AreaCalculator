@@ -1,0 +1,34 @@
+﻿CREATE TABLE Product(
+   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   name TEXT NOT NULL
+);
+
+CREATE TABLE Category(
+   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   name TEXT NOT NULL
+);
+
+CREATE TABLE ProductToCategory(
+   id INTEGER PRIMARY KEY AUTOINCREMENT,
+   productId INTEGER,
+   categoryId INTEGER
+);
+
+INSERT INTO Product (name) VALUES 
+    ("Alpha"),
+	("Beta"),
+	("Delta");
+	
+INSERT INTO Category (name) VALUES 
+    ("CategoryA"),
+	("CategoryB");
+	
+INSERT INTO ProductToCategory (productId, categoryId) VALUES 
+    (1, 1),
+    (1, 2),
+    (2, 1);
+	
+	
+SELECT p.name, c.name FROM ProductToCategory ptc
+   JOIN Category c ON c.id = ptc.categoryId
+   RIGHT JOIN Product p ON p.id = ptc.productId;
